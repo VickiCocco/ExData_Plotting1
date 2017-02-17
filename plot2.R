@@ -4,7 +4,7 @@ plot2 <-
         # read the raw data
         rawconsumption <- read.delim("household_power_consumption.txt", header=TRUE, sep = ";", dec = ".",stringsAsFactors = FALSE)
 
-        # take data from the date range and lose the raw data from memory        
+        # take data from the date range and remove the raw data from memory        
         plotdata <- subset(rawconsumption, Date == '1/2/2007'| Date == '2/2/2007')
         rm(rawconsumption)
 
