@@ -11,6 +11,7 @@ plot2 <-
         # get the plot data
         powerdata <- as.numeric(plotdata$Global_active_power)
         
+        # formatting the date and time
         timedata <- (dmy_hms(paste(plotdata$Date, plotdata$Time))) 
 
         # plot to a png file
